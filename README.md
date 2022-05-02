@@ -23,8 +23,9 @@ __duckduckgo__
 `dmenu_clone` - clone a git repo using dmenu + choosing where to put it                
 
 `dmenu_help` - __sxhkd__ helper basically 
-            your __shkdrc__ should look like this
-            comments should be __above__ the commands! 
+            your __shkdrc__ should look like this:
+            
+>        comments should be __above__ the commands! 
 ```sh
             # Open alacritty
             super + a
