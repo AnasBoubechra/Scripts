@@ -1,0 +1,5 @@
+#!/bin/sh
+#Dy@Ducky
+[ -z "$destdir" ] && destdir="$( echo "" | dmenu  -i -p "Cloning where ?" | sed "s|~|$HOME|g")"
+[ ! -d "$destdir" ] && dunstify "$destdir is not a directory, cancelled." && exit
+cd $destdir && git clone $(xclip -o) && dunstify "github" "Repo cloned in $destdir" 
