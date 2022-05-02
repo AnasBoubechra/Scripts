@@ -25,11 +25,11 @@ __duckduckgo__
 `dmenu_help` - __sxhkd__ helper basically 
             your __shkdrc__ should look like this
             comments should be __above__ the commands! 
-            ```sh
+```sh
             # Open alacritty
             super + a
                 alacritty
-            ```
+ ```
 `dmenu_loging` - simply reboot , shutdown , lock ( with slock ) script
 
 `pandoc_md_to_html` - convert md files to html using css and the filename as a 
