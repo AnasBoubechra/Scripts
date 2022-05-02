@@ -1,0 +1,40 @@
+#!/bin/sh
+#Dy@Ducky
+SEARCH=$(echo "" | dmenu -fn "Monokai Nerd Font:size=26" -p "")
+check(){
+	if [ -z $1 ];
+	then
+		exit
+	fi
+}
+case $SEARCH in
+	[yY] | yt | youtube)
+		YTB=$(echo "" | dmenu  -p "")
+		check $YTB
+		$BROWSER "https://www.youtube.com/results?search_query=${YTB}" 
+		;;
+	[wW] | wiby)
+		WIBY=$(echo "" | dmenu -p "")
+		check $WIBY
+		$BROWSER "https://wiby.me/?q=$(sed 's/ /+/g' <<< $WIBY)" 
+		;;
+	wiki|arch)
+		arch=$(echo "" | dmenu -p "")
+		check $arch
+		$BROWSER "https://wiki.archlinux.org/index.php?search=$(sed 's/ /+/g' <<< $arch)"
+		;;
+	git|github)
+		git=$(echo "" | dmenu -p "")
+		check $git
+		$BROWSER "https://github.com/search?q=$(sed 's/ /+/g' <<< $git)"
+		;;
+	13|1337|tor)
+		tor=$(echo "" | dmenu -p "")
+		check $tor
+		$BROWSER "https://www.1377x.to/search/${tor}/1/"
+		;;
+	*)
+                check $SEARCH
+		$BROWSER "https://duckduckgo.com/?q=${SEARCH}" 
+ 		;;
+esac

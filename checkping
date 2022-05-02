@@ -1,0 +1,4 @@
+#!/bin/bash
+Dy@Ducky
+nc -zw1 archlinux.org 443 && echo "We have connectivity" || echo "There is no internet"
+
