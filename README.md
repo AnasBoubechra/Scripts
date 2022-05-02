@@ -10,11 +10,9 @@
 password
 
 * `dmenu_web` - quickly fetch website 
-* github
-* youtube
-* archwiki
-* torrents
-* wiby
-* duckduckgo
-                            
-               
+ github
+ youtube
+ archwiki
+ torrents
+ wiby
+ duckduckgo
