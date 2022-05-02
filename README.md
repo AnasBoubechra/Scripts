@@ -4,7 +4,7 @@
 * `checkping` - quickly check the connectivity
 
 * `dmenu_enc` - dmenu script to encrypt and decrypt 
-* a file with a solid openssl configuration
+ a file with a solid openssl configuration
 
 * `dmenu_su` - uefull dmenu script to prompt for the root 
 password
